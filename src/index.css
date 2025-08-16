@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+/* Mobile-only fixes to prevent horizontal scrolling and layout shift */
+@media (max-width: 767px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
