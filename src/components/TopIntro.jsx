@@ -164,7 +164,9 @@ import bg11 from '../assets/bg11.jpeg'
 const TopIntro = ({ packages = [] }) => {
     // const topPackages = packages.slice(0, 3)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
   const images = [ bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9, bg10, bg11]
+
 
   useEffect(() => {
     const interval = setInterval(() => {
