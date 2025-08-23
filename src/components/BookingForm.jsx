@@ -39,7 +39,7 @@ const BookingForm = ({ formData, onSubmit, onChange }) => {
               >
                 <option>Sri Lanka</option>
                 <option>Kerala</option>
-                <option>Maldives</option>
+                <option>Malaysia</option>
               </select>
             </div>
             <div>

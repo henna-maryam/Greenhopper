@@ -153,11 +153,20 @@ import bg1 from '../assets/bg1.jpg'
 import bg2 from '../assets/bg2.jpg'
 import bg3 from '../assets/bg3.jpg'
 import bg4 from '../assets/bg4.jpg'
+import bg5 from '../assets/bg5.jpg'
+import bg6 from '../assets/bg6.jpeg'
+import bg7 from '../assets/bg7.jpeg'
+import bg8 from '../assets/bg8.jpeg'
+import bg9 from '../assets/bg9.jpeg'
+import bg10 from '../assets/bg10.jpeg'
+import bg11 from '../assets/bg11.jpeg'
 
 const TopIntro = ({ packages = [] }) => {
     // const topPackages = packages.slice(0, 3)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
-  const images = [ bg1, bg2, bg3, bg4]
+
+  const images = [ bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9, bg10, bg11]
+
 
   useEffect(() => {
     const interval = setInterval(() => {
