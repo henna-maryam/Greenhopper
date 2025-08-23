@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './components/Navbar'
+import Navbar from './components/Navbar'
 import TopIntro from './components/TopIntro'
-import Hero from './components/Header'
+import Header from './components/Header'
 import Packages from './components/Packages'
 import BookingForm from './components/BookingForm'
 import Footer from './components/Footer'
@@ -33,7 +33,7 @@ function App() {
       price: '$899'
     },
     {
-      title: 'Maldives',
+      title: 'Malasysia',
       description: 'Escape to paradise with overwater bungalows, crystal clear waters, and white sand beaches.',
       image: ml,
       price: '$1499'
@@ -91,9 +91,9 @@ function App() {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      <Header />
+      <Navbar />
       <TopIntro packages={packages} />
-      <Hero />
+      <Header />
       <div id="packages">
         <Packages 
           packages={packages} 

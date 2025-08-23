@@ -106,7 +106,7 @@ const AboutUs = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-[#1F2937] border-t border-[#5B8424]/20">
+      {/* <section className="py-20 bg-[#1F2937] border-t border-[#5B8424]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-12 text-white">What Our Travelers Say</h2>
           <div className="flex justify-center">
@@ -129,7 +129,7 @@ const AboutUs = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }
