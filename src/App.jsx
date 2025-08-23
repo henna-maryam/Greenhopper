@@ -33,7 +33,7 @@ function App() {
       price: '$899'
     },
     {
-      title: 'Malasysia',
+      title: 'Malaysia',
       description: 'Escape to paradise with overwater bungalows, crystal clear waters, and white sand beaches.',
       image: ml,
       price: '$1499'
