@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo-white.png'
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -14,9 +15,31 @@ const Footer = () => {
             At GreenHopper, we make every stay unique. From cozy homes to luxury retreats, 
             find your perfect escape and create unforgettable memories.
           </p>
-          {/* <button className="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-100 transition-colors">
-            Browse Special Deals
-          </button> */}
+        </div>
+
+        {/* Contact Information */}
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="flex items-center justify-center space-x-3">
+            <FaPhone className="text-[#5B8424] text-xl" />
+            <div>
+              <h4 className="text-white font-semibold">Phone</h4>
+              <a href="tel:+919876543210" className="text-gray-400 hover:text-[#5B8424]">+91 8156901999 || 8157901999</a>
+            </div>
+          </div>
+          <div className="flex items-center justify-center space-x-3">
+            <FaEnvelope className="text-[#5B8424] text-xl" />
+            <div>
+              <h4 className="text-white font-semibold">Email</h4>
+              <a href="mailto:info@greenhopper.com" className="text-gray-400 hover:text-[#5B8424]">info@greenhopperholidays.com</a>
+            </div>
+          </div>
+          <div className="flex items-center justify-center space-x-3">
+            <FaMapMarkerAlt className="text-[#5B8424] text-xl" />
+            <div>
+              <h4 className="text-white font-semibold">Location</h4>
+              <p className="text-gray-400">Cochin & Kottakal</p>
+            </div>
+          </div>
         </div>
 
         {/* Social media links: icons on mobile, text on desktop */}

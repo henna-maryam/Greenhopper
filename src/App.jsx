@@ -14,6 +14,7 @@ function App() {
   const [formData, setFormData] = React.useState({
     name: '',
     email: '',
+    nationality: '',
     destination: 'Sri Lanka',
     date: '',
     notes: ''
