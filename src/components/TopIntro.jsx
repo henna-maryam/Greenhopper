@@ -192,10 +192,10 @@ const TopIntro = ({ packages = [] }) => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 flex flex-col justify-end h-full">
         <div className="flex flex-col gap-4 max-w-xl mb-8">
           <div className="mb-2">
-            <p className="uppercase tracking-widest text-sm text-white/80 mb-2 pt-55">Mountains | Plains | Beaches</p>
+            <p className="uppercase tracking-widest text-sm text-white/80 mb-2 pt-55">Mountains | Beaches | Skyscrapers</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight drop-shadow">
-              Spend your vacation
-              <br className="hidden sm:block" /> with our activities
+              From God’s Own Country to Tropical Wonders
+              <br className="hidden sm:block" /> Your Journey Begins Here
             </h2>
           </div>
 

@@ -30,6 +30,17 @@ const BookingForm = ({ formData, onSubmit, onChange }) => {
               />
             </div>
             <div>
+              <label className="block text-white mb-2">Nationality</label>
+              <input
+                type="text"
+                name="nationality"
+                value={formData.nationality}
+                onChange={onChange}
+                required
+                className="w-full px-4 py-2 bg-[#111111] border border-[#1F2937] rounded-lg focus:outline-none focus:border-[#5B8424] text-white"
+              />
+            </div>
+            <div>
               <label className="block text-white mb-2">Destination</label>
               <select
                 name="destination"
