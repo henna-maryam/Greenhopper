@@ -45,6 +45,8 @@ const Navbar = () => {
               Quick Book
             </a>
 
+            
+
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}

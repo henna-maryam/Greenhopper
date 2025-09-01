@@ -4,13 +4,13 @@ import bg2 from '../assets/bg2.webp'
 import bg3 from '../assets/bg3.webp'
 import bg4 from '../assets/bg4.webp'
 import bg5 from '../assets/bg5.webp'
-import bg6 from '../assets/bg6.webp'
+// import bg6 from '../assets/bg6.webp'
 import bg7 from '../assets/bg7.webp'
 import bg8 from '../assets/bg8.webp'
-import bg9 from '../assets/bg9.webp'
+// import bg9 from '../assets/bg9.webp'
 import bg10 from '../assets/bg10.webp'
-import bg11 from '../assets/bg11.webp'
-import badge from '../assets/badge-removebg-preview.png'
+// import bg11 from '../assets/bg11.webp'
+// import badge from '../assets/badge-removebg-preview.png'
 
 const TopIntro = ({ packages = [] }) => {
     // const topPackages = packages.slice(0, 3)
@@ -41,7 +41,7 @@ const TopIntro = ({ packages = [] }) => {
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/10" />
       {/* Badge Section - Top Left Corner */}
-      <div className="absolute top-16 right-4 sm:top-10 sm:right-5 lg:top-16 lg:right-38 z-10">
+      {/* <div className="absolute top-16 right-4 sm:top-10 sm:right-5 lg:top-16 lg:right-38 z-10">
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-full blur-3xl"></div>
           <img 
@@ -50,13 +50,13 @@ const TopIntro = ({ packages = [] }) => {
             className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain drop-shadow-2xl"
           />
         </div>
-      </div>
+      </div> */}
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 flex flex-col justify-end h-full">
         <div className="flex flex-col gap-4 max-w-xl mb-8">
           <div className="mb-2">
             <p className="uppercase tracking-widest text-sm text-white/80 mb-2 pt-55">Mountains | Beaches | Skyscrapers</p>
-            <p className="text-4xl sm:text-4xl md:text-4xl font-normal leading-tight drop-shadow"
+            <p className="text-6xl sm:text-4xl md:text-6xl font-normal leading-tight drop-shadow"
             style={{ fontFamily: '"Story Script", sans-serif' }}>
               From God's Own Country to Tropical Wonders
             </p>
