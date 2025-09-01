@@ -52,7 +52,7 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center ml-48">
+            <div className="flex justify-center ml-8 sm:ml-16 md:ml-48">
               <img
                 src={badge}
                 alt="10 Years of Trust and Experience Badge"

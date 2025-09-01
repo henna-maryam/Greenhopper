@@ -36,7 +36,7 @@ const TopIntro = ({ packages = [] }) => {
         backgroundImage: `url(${images[currentImageIndex]})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        transition: 'background-image 0.5s ease-in-out',
+        transition: 'background-image 0.3s ease-in-out',
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/10" />
