@@ -8,9 +8,9 @@ import Footer from './components/Footer'
 import AboutUs from './components/AboutUs'
 import AnimatedSection from './components/AnimatedSection'
 import StaggeredAnimation from './components/StaggeredAnimation'
-import sl from './assets/sl.png'
-import kl from './assets/kl.png'
-import ml from './assets/ml.png'
+import sl from './assets/srilanka.webp'
+import kl from './assets/kerala.webp'
+import ml from './assets/malaysia.webp'
 
 function App() {
   const [formData, setFormData] = React.useState({
@@ -24,16 +24,16 @@ function App() {
 
   const packages = [
     {
-      title: 'Sri Lanka',
-      description: 'Experience the pearl of Indian Ocean with ancient temples, pristine beaches, and exotic wildlife.',
-      image: sl,
-      price: '$999'
-    },
-    {
       title: 'Kerala',
       description: 'Discover God\'s own country with backwaters, tea plantations, and ayurvedic traditions.',
       image: kl,
       price: '$899'
+    },
+    {
+      title: 'Sri Lanka',
+      description: 'Experience the pearl of Indian Ocean with ancient temples, pristine beaches, and exotic wildlife.',
+      image: sl,
+      price: '$999'
     },
     {
       title: 'Malaysia',
