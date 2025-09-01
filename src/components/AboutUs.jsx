@@ -35,7 +35,7 @@ const AboutUs = () => {
               <p className="text-gray-300 mb-8 text-lg">
                 Greenhopper Holidays is your gateway to unforgettable travel experiences across India. Founded by industry experts with over 20 years of expertise, we specialize in adventure, cultural, religious, natural, and wildlife tours. With offices in Cochin and Kottakal, we blend professional service with authentic Indian hospitality. Our 24/7 team handles every detail—travel planning, itinerary design, hotel bookings, ticketing, transport, and personalized holiday packages—so you can enjoy a seamless journey. Whether it’s trekking the Himalayas, relaxing on serene beaches, or exploring India’s spiritual and cultural richness, Greenhopper promises journeys that are personalized, professional, and truly memorable.
               </p>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-3 gap-6">
                 <div>
                   <h3 className="text-2xl font-bold text-[#5B8424] mb-2">10+</h3>
                   <p className="text-gray-400">Years of Experience</p>
@@ -43,10 +43,6 @@ const AboutUs = () => {
                 <div>
                   <h3 className="text-2xl font-bold text-[#5B8424] mb-2">430+</h3>
                   <p className="text-gray-400">Happy Travelers</p>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-[#5B8424] mb-2">100%</h3>
-                  <p className="text-gray-400">Satisfaction Rate</p>
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-[#5B8424] mb-2">24/7</h3>

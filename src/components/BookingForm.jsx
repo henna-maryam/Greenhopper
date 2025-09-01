@@ -1,6 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+
+const API_BASE_URL = import.meta.env.VITE_API_URL
 
 const BookingForm = ({ formData, onSubmit, onChange }) => {
+  const [destinations, setDestinations] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchDestinations = async () => {
+      try {
+        console.log('Fetching destinations from:', `${API_BASE_URL}/bookings/destinations`);
+        const response = await fetch(`${API_BASE_URL}/bookings/destinations`);
+        console.log('Response status:', response.status);
+        if (response.ok) {
+          const data = await response.json();
+          console.log('Destinations data:', data);
+          setDestinations(data);
+        } else {
+          console.error('Failed to fetch destinations, status:', response.status);
+          const errorText = await response.text();
+          console.error('Error response:', errorText);
+        }
+      } catch (error) {
+        console.error('Error fetching destinations:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchDestinations();
+  }, []);
+
   return (
     <section id="booking" className="py-20 w-full bg-[#111111]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,7 +42,7 @@ const BookingForm = ({ formData, onSubmit, onChange }) => {
               <input
                 type="text"
                 name="name"
-                value={formData.name}
+                value={formData.name || ''}
                 onChange={onChange}
                 required
                 className="w-full px-4 py-2 bg-[#111111] border border-[#1F2937] rounded-lg focus:outline-none focus:border-[#5B8424] text-white"
@@ -23,7 +53,7 @@ const BookingForm = ({ formData, onSubmit, onChange }) => {
               <input
                 type="email"
                 name="email"
-                value={formData.email}
+                value={formData.email || ''}
                 onChange={onChange}
                 required
                 className="w-full px-4 py-2 bg-[#111111] border border-[#1F2937] rounded-lg focus:outline-none focus:border-[#5B8424] text-white"
@@ -34,7 +64,7 @@ const BookingForm = ({ formData, onSubmit, onChange }) => {
               <input
                 type="text"
                 name="nationality"
-                value={formData.nationality}
+                value={formData.nationality || ''}
                 onChange={onChange}
                 required
                 className="w-full px-4 py-2 bg-[#111111] border border-[#1F2937] rounded-lg focus:outline-none focus:border-[#5B8424] text-white"
@@ -44,21 +74,29 @@ const BookingForm = ({ formData, onSubmit, onChange }) => {
               <label className="block text-white mb-2">Destination</label>
               <select
                 name="destination"
-                value={formData.destination}
+                value={formData.destination || ''}
                 onChange={onChange}
+                required
                 className="w-full px-4 py-2 bg-[#111111] border border-[#1F2937] rounded-lg focus:outline-none focus:border-[#5B8424] text-white"
               >
-                <option>Sri Lanka</option>
-                <option>Kerala</option>
-                <option>Malaysia</option>
+                <option value="">Select a destination</option>
+                {loading ? (
+                  <option disabled>Loading destinations...</option>
+                ) : (
+                  destinations.map((dest) => (
+                    <option key={dest._id} value={dest.destinationName}>
+                      {dest.destinationName}, {dest.country}
+                    </option>
+                  ))
+                )}
               </select>
             </div>
             <div>
               <label className="block text-white mb-2">Preferred Date</label>
               <input
                 type="date"
-                name="date"
-                value={formData.date}
+                name="preferredDate"
+                value={formData.preferredDate || ''}
                 onChange={onChange}
                 required
                 className="w-full px-4 py-2 bg-[#111111] border border-[#1F2937] rounded-lg focus:outline-none focus:border-[#5B8424] text-white"
@@ -67,8 +105,8 @@ const BookingForm = ({ formData, onSubmit, onChange }) => {
             <div>
               <label className="block text-white mb-2">Additional Notes</label>
               <textarea
-                name="notes"
-                value={formData.notes}
+                name="additionalNotes"
+                value={formData.additionalNotes || ''}
                 onChange={onChange}
                 rows="4"
                 className="w-full px-4 py-2 bg-[#111111] border border-[#1F2937] rounded-lg focus:outline-none focus:border-[#5B8424] text-white"

@@ -7,6 +7,7 @@ const Navbar = () => {
     { label: 'About Us', href: '#about' },
     { label: 'Premium', href: '#packages' },
     { label: 'Blogs', href: '#packages' },
+    { label: 'Contact Us', href: '#contact' },
   ]
 
   return (
@@ -28,7 +29,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
             <a
               href="#booking"
-              className="hidden sm:inline-flex items-center justify-center rounded-xl border border-white/40 px-5 py-2.5 text-sm font-medium hover:bg-white/10 transition-colors"
+              className="hidden sm:inline-flex items-center justify-center rounded-xl border-2 border-[#5B8424] bg-[#5B8424] px-6 py-3 text-sm font-semibold text-white hover:bg-[#5B8424]/80 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Quick Book
             </a>

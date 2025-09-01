@@ -6,6 +6,8 @@ import Packages from './components/Packages'
 import BookingForm from './components/BookingForm'
 import Footer from './components/Footer'
 import AboutUs from './components/AboutUs'
+import AnimatedSection from './components/AnimatedSection'
+import StaggeredAnimation from './components/StaggeredAnimation'
 import sl from './assets/sl.png'
 import kl from './assets/kl.png'
 import ml from './assets/ml.png'
@@ -15,9 +17,9 @@ function App() {
     name: '',
     email: '',
     nationality: '',
-    destination: 'Sri Lanka',
-    date: '',
-    notes: ''
+    destination: '',
+    preferredDate: '',
+    additionalNotes: ''
   })
 
   const packages = [
@@ -51,9 +53,10 @@ function App() {
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
+          nationality: formData.nationality,
           destination: formData.destination,
-          preferredDate: formData.date,
-          additionalNotes: formData.notes
+          preferredDate: formData.preferredDate,
+          additionalNotes: formData.additionalNotes
         })
       })
       const data = await res.json()
@@ -69,9 +72,10 @@ function App() {
       setFormData({
         name: '',
         email: '',
-        destination: 'Sri Lanka',
-        date: '',
-        notes: ''
+        nationality: '',
+        destination: '',
+        preferredDate: '',
+        additionalNotes: ''
       })
     } catch (err) {
       const banner = document.createElement('div')
@@ -93,28 +97,80 @@ function App() {
   return (
     <div className="min-h-screen bg-black text-white">
       <Navbar />
+      
+      {/* TopIntro - Always visible, no animation needed */}
       <TopIntro packages={packages} />
-      <Header />
-      <div id="packages">
-        <Packages 
-          packages={packages} 
-          onBookNow={(destination) => {
-            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })
-            setFormData(prev => ({ ...prev, destination }))
-          }} 
-        />
-      </div>
-      <div id="about">
-        <AboutUs />
-      </div>
-      <div id="booking">
-        <BookingForm 
-          formData={formData}
-          onSubmit={handleSubmit}
-          onChange={handleChange}
-        />
-      </div>
-      <Footer />
+      
+      {/* Header - Fade up animation */}
+      <AnimatedSection 
+        animationType="fadeUp" 
+        delay={0.2} 
+        duration={1}
+        yOffset={80}
+      >
+        <Header />
+      </AnimatedSection>
+      
+
+      
+      {/* Packages - Staggered animation for individual package cards */}
+      <StaggeredAnimation 
+        delay={0.4} 
+        duration={1}
+        yOffset={80}
+        threshold={0.2}
+        staggerDelay={0.2}
+      >
+        <div id="packages">
+          <Packages 
+            packages={packages} 
+            onBookNow={(destination) => {
+              document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })
+              setFormData(prev => ({ ...prev, destination }))
+            }} 
+          />
+        </div>
+      </StaggeredAnimation>
+      
+      {/* AboutUs - Slide in from right */}
+      <AnimatedSection 
+        animationType="slideInRight" 
+        delay={0.2} 
+        duration={1.1}
+        yOffset={70}
+        threshold={0.15}
+      >
+        <div id="about">
+          <AboutUs />
+        </div>
+      </AnimatedSection>
+      
+      {/* BookingForm - Fade up with longer delay */}
+      <AnimatedSection 
+        animationType="fadeUp" 
+        delay={0.5} 
+        duration={1.3}
+        yOffset={90}
+        threshold={0.1}
+      >
+        <div id="booking">
+          <BookingForm 
+            formData={formData}
+            onSubmit={handleSubmit}
+            onChange={handleChange}
+          />
+        </div>
+      </AnimatedSection>
+      
+      {/* Footer - Fade in */}
+      <AnimatedSection 
+        animationType="fadeIn" 
+        delay={0.3} 
+        duration={0.8}
+        threshold={0.05}
+      >
+        <Footer />
+      </AnimatedSection>
     </div>
   )
 }
