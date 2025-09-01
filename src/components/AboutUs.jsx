@@ -52,11 +52,11 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center ml-48">
               <img
                 src={badge}
                 alt="10 Years of Trust and Experience Badge"
-                className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-72 lg:h-72 drop-shadow-2xl"
+                className="w-72 h-72 sm:w-48 sm:h-48 md:w-10/12 md:h-10/12 lg:w-80 lg:h-80 drop-shadow-2xl"
               />
             </div>
           </div>
