@@ -96,7 +96,7 @@ const Footer = () => {
                 <div className="space-y-3">
                   <a href="#packages" className="block text-gray-400 hover:text-white transition-colors">Kerala Packages</a>
                   <a href="#packages" className="block text-gray-400 hover:text-white transition-colors">Srilanka Packages</a>
-                  <a href="#packages" className="block text-gray-400 hover:text-white transition-colors">Maldives Packages</a>
+                  <a href="#packages" className="block text-gray-400 hover:text-white transition-colors">Malaysia Packages</a>
                 </div>
               </div>
             </div>
