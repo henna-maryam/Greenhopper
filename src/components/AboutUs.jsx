@@ -1,6 +1,8 @@
 import React from 'react'
 import { CircularTestimonials } from '../components/ui/circular-testimonials'
 import { FaRoute, FaHotel, FaCar, FaUserTie, FaMapMarkedAlt, FaHeadset } from 'react-icons/fa'
+import badge from '../assets/badge-removebg-preview.png'
+
 
 const testimonials = [
   {
@@ -50,15 +52,15 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&q=80" 
-                alt="Travel Experience" 
-                className="rounded-lg shadow-xl"
-              />
-              <div className="absolute -bottom-6 -left-6 bg-[#5B8424] text-white p-6 rounded-lg">
+            <div className="flex justify-center items-center">
+              <img
+              src={badge}
+              alt="10 Years of Trust and Experience Badge"
+              className="w-56 h-56 sm:w-20 sm:h-20 md:w-72 md:h-72 drop-shadow-2xl ml-56"
+            />
+              {/* <div className="absolute -bottom-6 -left-6 bg-[#5B8424] text-white p-6 rounded-lg">
                 <p className="text-lg font-semibold">Trusted by thousands of travelers worldwide</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

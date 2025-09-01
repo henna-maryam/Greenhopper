@@ -37,7 +37,7 @@ function App() {
     },
     {
       title: 'Malaysia',
-      description: 'Escape to paradise with overwater bungalows, crystal clear waters, and white sand beaches.',
+      description: 'From the iconic Petronas Towers to tranquil islands and vibrant street markets, Malaysia offers a perfect blend of nature, culture, and unforgettable experiences',
       image: ml,
       price: '$1499'
     }
