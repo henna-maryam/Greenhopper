@@ -27,19 +27,19 @@ function App() {
       title: 'Kerala',
       description: 'Discover God\'s own country with backwaters, tea plantations, and ayurvedic traditions.',
       image: kl,
-      price: '$899'
+      price: '35000'
     },
     {
       title: 'Sri Lanka',
       description: 'Experience the pearl of Indian Ocean with ancient temples, pristine beaches, and exotic wildlife.',
       image: sl,
-      price: '$999'
+      price: '53777'
     },
     {
       title: 'Malaysia',
       description: 'From the iconic Petronas Towers to tranquil islands and vibrant street markets, Malaysia offers a perfect blend of nature, culture, and unforgettable experiences',
       image: ml,
-      price: '$1499'
+      price: '54692'
     }
   ]
 
