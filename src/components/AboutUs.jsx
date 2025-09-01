@@ -56,7 +56,7 @@ const AboutUs = () => {
               <img
               src={badge}
               alt="10 Years of Trust and Experience Badge"
-              className="w-56 h-56 sm:w-20 sm:h-20 md:w-64 md:h-64 drop-shadow-2xl ml-24"
+              className="w-56 h-56 sm:w-20 sm:h-20 md:w-72 md:h-72 drop-shadow-2xl ml-56"
             />
               {/* <div className="absolute -bottom-6 -left-6 bg-[#5B8424] text-white p-6 rounded-lg">
                 <p className="text-lg font-semibold">Trusted by thousands of travelers worldwide</p>
