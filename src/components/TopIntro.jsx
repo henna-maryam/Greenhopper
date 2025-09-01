@@ -160,6 +160,7 @@ import bg8 from '../assets/bg8.webp'
 import bg9 from '../assets/bg9.webp'
 import bg10 from '../assets/bg10.webp'
 import bg11 from '../assets/bg11.webp'
+import badge from '../assets/badge-removebg-preview.png'
 
 const TopIntro = ({ packages = [] }) => {
     // const topPackages = packages.slice(0, 3)
@@ -189,14 +190,28 @@ const TopIntro = ({ packages = [] }) => {
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/10" />
+      {/* Badge Section - Top Left Corner */}
+      <div className="absolute top-4 left-4 sm:top-6 sm:left-6 lg:top-8 lg:left-8 z-10">
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-full blur-3xl"></div>
+          <img 
+            src={badge} 
+            alt="10 Years of Trust and Experience Badge" 
+            className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain drop-shadow-2xl"
+          />
+        </div>
+      </div>
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 flex flex-col justify-end h-full">
         <div className="flex flex-col gap-4 max-w-xl mb-8">
           <div className="mb-2">
-            <p className="uppercase tracking-widest text-sm text-white/80 mb-2 pt-55">Mountains | Plains | Beaches</p>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight drop-shadow">
-              Spend your vacation
-              <br className="hidden sm:block" /> with our activities
-            </h2>
+            <p className="uppercase tracking-widest text-sm text-white/80 mb-2 pt-55">Mountains | Beaches | Skyscrapers</p>
+            <p className="text-4xl sm:text-4xl md:text-4xl font-normal leading-tight drop-shadow">
+              From God's Own Country to Tropical Wonders
+            </p>
+            <p className="text-5xl font-bold leading-tight drop-shadow">
+              Your Journey Begins Here
+            </p>
           </div>
 
           {/* <div>

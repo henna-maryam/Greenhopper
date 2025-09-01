@@ -1,59 +1,168 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import logo from '../assets/logo-white.png'
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaArrowUp } from 'react-icons/fa'
 
 const Footer = () => {
+  const [showScrollTop, setShowScrollTop] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
-    <footer className="bg-[#111111] text-white py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top section with logo and description */}
-        <div className="flex flex-col items-center justify-center space-y-6 mb-12">
-          <div className="space-x-2 mb-4">
-            <img src={logo} alt="GreenHopper" className="h-20 w-32" />
-          </div>
-          <p className="text-gray-300 max-w-2xl text-center">
-            At GreenHopper, we make every stay unique. From cozy homes to luxury retreats, 
-            find your perfect escape and create unforgettable memories.
-          </p>
-          {/* <button className="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-100 transition-colors">
-            Browse Special Deals
-          </button> */}
-        </div>
+    <footer id="contact" className="bg-[#111111] text-white relative">
+      {/* Top Call-to-Action Section */}
+      <div className="bg-[#1a1a1a] py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* 24/7 Support Block */}
+            <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-3">
+                <div className="relative">
+                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                  </div>
+                  <div className="absolute -top-1 -right-1 w-6 h-6 bg-[#5B8424] rounded-full flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">24</span>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-white font-semibold">Need Any Support For Tour & Travels ?</h3>
+                </div>
+              </div>
+              <button className="w-10 h-10 bg-[#5B8424] rounded-full flex items-center justify-center hover:bg-[#4a6b1f] transition-colors">
+                <FaArrowUp className="w-4 h-4 text-white transform rotate-45" />
+              </button>
+            </div>
 
-        {/* Social media links: icons on mobile, text on desktop */}
-        {/* <div className="flex items-center justify-center gap-4 mb-12"> */}
-          {/* Mobile icons */}
-          {/* <div className="flex sm:hidden items-center gap-4">
-            <a aria-label="Twitter" href="#" className="p-2 rounded-full bg-gray-800 text-gray-300 hover:text-white hover:bg-gray-700">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5"><path d="M8.29 20c7.55 0 11.68-6.15 11.68-11.48 0-.17 0-.35-.01-.52A8.24 8.24 0 0 0 22 5.92a8.36 8.36 0 0 1-2.36.64 4.06 4.06 0 0 0 1.81-2.23 8.19 8.19 0 0 1-2.6.98A4.1 4.1 0 0 0 16.1 4c-2.26 0-4.1 1.82-4.1 4.06 0 .32.04.64.11.94A11.64 11.64 0 0 1 3.1 4.87 4.02 4.02 0 0 0 2.6 6.92c0 1.4.73 2.64 1.84 3.36a4.14 4.14 0 0 1-1.86-.5v.05c0 1.95 1.4 3.58 3.25 3.95-.34.09-.7.14-1.07.14-.26 0-.52-.02-.77-.07.52 1.6 2.03 2.77 3.82 2.8A8.24 8.24 0 0 1 2 18.57 11.62 11.62 0 0 0 8.29 20z"/></svg>
-            </a>
-            <a aria-label="Instagram" href="#" className="p-2 rounded-full bg-gray-800 text-gray-300 hover:text-white hover:bg-gray-700">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zM18 6.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
-            </a>
-            <a aria-label="YouTube" href="#" className="p-2 rounded-full bg-gray-800 text-gray-300 hover:text-white hover:bg-gray-700">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6a3 3 0 0 0-2.1 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.6 15.5V8.5l6.4 3.5-6.4 3.5z"/></svg>
-            </a>
-            <a aria-label="Facebook" href="#" className="p-2 rounded-full bg-gray-800 text-gray-300 hover:text-white hover:bg-gray-700">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H7.9V12h2.6V9.7c0-2.6 1.6-4 3.9-4 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
-            </a>
-          </div> */}
-          {/* Desktop labels */}
-          {/* <div className="hidden sm:flex items-center space-x-4">
-            <a href="#" className="text-gray-400 hover:text-white px-4 py-2 rounded-full bg-gray-800">Twitter</a>
-            <a href="#" className="text-gray-400 hover:text-white px-4 py-2 rounded-full bg-gray-800">Instagram</a>
-            <a href="#" className="text-gray-400 hover:text-white px-4 py-2 rounded-full bg-gray-800">Youtube</a>
-            <a href="#" className="text-gray-400 hover:text-white px-4 py-2 rounded-full bg-gray-800">Facebook</a>
+            {/* Ready to Get Started Block */}
+            <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-3">
+                <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-white font-semibold">Ready to Get Started With GreenHopper!</h3>
+                </div>
+              </div>
+              <button className="w-10 h-10 bg-[#5B8424] rounded-full flex items-center justify-center hover:bg-[#4a6b1f] transition-colors">
+                <FaArrowUp className="w-4 h-4 text-white transform rotate-45" />
+              </button>
+            </div>
           </div>
-        </div> */}
-
-        {/* Bottom section with links */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center">
-          <div className="flex space-x-4 mb-4 sm:mb-0">
-            <a href="#" className="text-gray-400 hover:text-white">Terms & Conditions</a>
-            <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
-          </div>
-          <p className="text-gray-400">© {new Date().getFullYear()} GreenHopper. All rights reserved.</p>
         </div>
       </div>
+
+      {/* Separator Line */}
+      <div className="border-t border-gray-800"></div>
+
+      {/* Main Footer Content */}
+      <div className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-3 gap-12">
+            {/* Brand Information */}
+            <div className="space-y-6">
+              <div className="space-y-4">
+                <img src={logo} alt="GreenHopper" className="h-16 w-auto" />
+                <div className="text-sm text-gray-300">
+                  <p>Welcome you to enjoy fabulous and unique experience on Greenhopper holiday packages.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div className="space-y-6">
+              <h3 className="text-white font-bold text-lg">Quick Links</h3>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-3">
+                  <a href="#about" className="block text-gray-400 hover:text-white transition-colors">About GreenHopper</a>
+                  <a href="#packages" className="block text-gray-400 hover:text-white transition-colors">Destinations</a>
+                  <a href="#packages" className="block text-gray-400 hover:text-white transition-colors">Packages</a>
+                  <a href="#home" className="block text-gray-400 hover:text-white transition-colors">Blogs</a>
+                  <a href="#home" className="block text-gray-400 hover:text-white transition-colors">Gallery</a>
+                </div>
+                <div className="space-y-3">
+                  <a href="#packages" className="block text-gray-400 hover:text-white transition-colors">Kerala Packages</a>
+                  <a href="#packages" className="block text-gray-400 hover:text-white transition-colors">Srilanka Packages</a>
+                  <a href="#packages" className="block text-gray-400 hover:text-white transition-colors">Maldives Packages</a>
+                </div>
+              </div>
+            </div>
+
+            {/* Reach Us */}
+            <div className="space-y-6">
+              <h3 className="text-white font-bold text-lg">Reach Us</h3>
+              <div className="space-y-6">
+                {/* UAE Contact */}
+                <div>
+                  <h4 className="text-white font-semibold mb-2">UAE</h4>
+                  <p className="text-gray-400 text-sm mb-1">3rd Floor, Room No:328, R.K.M Building, Al Qiyadah, Metro Exit 2, Dubai, UAE</p>
+                  <p className="text-gray-400 text-sm">Ph: 00 91 81579 01999</p>
+                </div>
+                
+                {/* India Contact */}
+                <div>
+                  <h4 className="text-white font-semibold mb-2">India</h4>
+                  <p className="text-gray-400 text-sm mb-1">KM4/812- Smart Trade City, Kottakkal, Malappuram Dt. 676553</p>
+                  <p className="text-gray-400 text-sm mb-3">Ph: +91 7025 901 901</p>
+                  
+                  {/* Social Media Icons */}
+                  <div className="flex space-x-3">
+                    <a href="#" className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#5B8424] transition-colors">
+                      <FaFacebook className="w-4 h-4 text-white" />
+                    </a>
+                    <a href="#" className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#5B8424] transition-colors">
+                      <FaTwitter className="w-4 h-4 text-white" />
+                    </a>
+                    <a href="#" className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#5B8424] transition-colors">
+                      <FaLinkedin className="w-4 h-4 text-white" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Separator Line */}
+      <div className="border-t border-gray-800"></div>
+
+      {/* Bottom Section */}
+      <div className="py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+            <div className="flex space-x-6">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Setting & privacy</a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Faqs</a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Support</a>
+            </div>
+            <p className="text-gray-400 text-sm">2023 GreenHopper Holidays. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll to Top Button */}
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 w-12 h-12 bg-[#5B8424] rounded-full flex items-center justify-center hover:bg-[#4a6b1f] transition-all duration-300 shadow-lg z-50"
+        >
+          <FaArrowUp className="w-5 h-5 text-white" />
+        </button>
+      )}
     </footer>
   )
 }

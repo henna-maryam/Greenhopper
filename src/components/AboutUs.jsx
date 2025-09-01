@@ -1,5 +1,6 @@
 import React from 'react'
 import { CircularTestimonials } from '../components/ui/circular-testimonials'
+import { FaRoute, FaHotel, FaCar, FaUserTie, FaMapMarkedAlt, FaHeadset } from 'react-icons/fa'
 
 const testimonials = [
   {
@@ -32,22 +33,16 @@ const AboutUs = () => {
             <div>
               <h2 className="text-4xl font-bold text-white mb-6">Your Gateway to Extraordinary Adventures</h2>
               <p className="text-gray-300 mb-8 text-lg">
-                At GreenHopper, we believe in creating more than just trips - we craft experiences that last a lifetime. 
-                Founded with a passion for sustainable travel and authentic cultural experiences, we specialize in 
-                curating unique journeys across South Asia's most breathtaking destinations.
+                Greenhopper Holidays is your gateway to unforgettable travel experiences across India. Founded by industry experts with over 20 years of expertise, we specialize in adventure, cultural, religious, natural, and wildlife tours. With offices in Cochin and Kottakal, we blend professional service with authentic Indian hospitality. Our 24/7 team handles every detail—travel planning, itinerary design, hotel bookings, ticketing, transport, and personalized holiday packages—so you can enjoy a seamless journey. Whether it’s trekking the Himalayas, relaxing on serene beaches, or exploring India’s spiritual and cultural richness, Greenhopper promises journeys that are personalized, professional, and truly memorable.
               </p>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-3 gap-6">
                 <div>
                   <h3 className="text-2xl font-bold text-[#5B8424] mb-2">10+</h3>
                   <p className="text-gray-400">Years of Experience</p>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-[#5B8424] mb-2">5000+</h3>
+                  <h3 className="text-2xl font-bold text-[#5B8424] mb-2">430+</h3>
                   <p className="text-gray-400">Happy Travelers</p>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-[#5B8424] mb-2">100%</h3>
-                  <p className="text-gray-400">Satisfaction Rate</p>
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-[#5B8424] mb-2">24/7</h3>
@@ -72,33 +67,60 @@ const AboutUs = () => {
       {/* Values Section */}
       <section className="py-20 bg-[#111111]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center mb-12 text-white">Our Values</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-white">Services Provided</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-6 bg-[#1F2937] rounded-lg border border-[#5B8424]/20">
               <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🌿</span>
+                <FaRoute className="text-3xl text-[#5B8424]" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Sustainable Travel</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Personalized Itineraries</h3>
               <p className="text-gray-400">
-                We're committed to eco-friendly practices and supporting local communities in all our destinations.
+                Custom-tailored travel plans designed to match your interests and preferences perfectly.
               </p>
             </div>
             <div className="text-center p-6 bg-[#1F2937] rounded-lg border border-[#5B8424]/20">
               <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🤝</span>
+                <FaHotel className="text-3xl text-[#5B8424]" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Personal Touch</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Hotel Booking</h3>
               <p className="text-gray-400">
-                Every journey is tailored to your preferences, ensuring a unique and memorable experience.
+                Carefully selected accommodations that ensure comfort and quality throughout your stay.
               </p>
             </div>
             <div className="text-center p-6 bg-[#1F2937] rounded-lg border border-[#5B8424]/20">
               <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">⭐</span>
+                <FaCar className="text-3xl text-[#5B8424]" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Excellence</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Transportation</h3>
               <p className="text-gray-400">
-                We maintain the highest standards in service, safety, and customer satisfaction.
+                Reliable and comfortable transfer services for all your travel needs.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-[#1F2937] rounded-lg border border-[#5B8424]/20">
+              <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FaUserTie className="text-3xl text-[#5B8424]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Expert Guides</h3>
+              <p className="text-gray-400">
+                Professional and knowledgeable local guides to enhance your travel experience.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-[#1F2937] rounded-lg border border-[#5B8424]/20">
+              <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FaMapMarkedAlt className="text-3xl text-[#5B8424]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Tour Planning</h3>
+              <p className="text-gray-400">
+                Comprehensive tour planning and coordination for seamless travel experiences.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-[#1F2937] rounded-lg border border-[#5B8424]/20">
+              <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FaHeadset className="text-3xl text-[#5B8424]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">24/7 Support</h3>
+              <p className="text-gray-400">
+                Round-the-clock assistance and support throughout your journey.
               </p>
             </div>
           </div>
