@@ -25,21 +25,21 @@ function App() {
   const packages = [
     {
       title: 'Kerala',
-      description: 'Discover God\'s own country with backwaters, tea plantations, and ayurvedic traditions.',
+      description: 'From tranquil houseboat cruises to vibrant cultural traditions, Kerala offers a perfect blend of relaxation, adventure, and timeless charm.',
       image: kl,
-      price: '35000'
+      price: '35000 INR /-'
     },
     {
       title: 'Sri Lanka',
       description: 'Experience the pearl of Indian Ocean with ancient temples, pristine beaches, and exotic wildlife.',
       image: sl,
-      price: '53777'
+      price: '53777 INR /-'
     },
     {
       title: 'Malaysia',
       description: 'From the iconic Petronas Towers to tranquil islands and vibrant street markets, Malaysia offers a perfect blend of nature, culture, and unforgettable experiences',
       image: ml,
-      price: '54692'
+      price: '54692 INR /-'
     }
   ]
 

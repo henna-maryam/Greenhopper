@@ -13,7 +13,7 @@ const PackageCard = ({ pkg, onBookNow }) => {
 
         {/* Price + Button Row */}
         <div className="flex items-center justify-between mt-auto">
-          <span className="text-[#5B8424] font-bold text-xl">₹ {pkg.price}</span>
+          <span className="text-[#5B8424] font-bold text-xl">{pkg.price}</span>
           <button
             onClick={() => onBookNow(pkg.title)}
             className="bg-[#5B8424] text-white px-4 py-2 rounded-lg hover:bg-[#5B8424]/80 transition-colors shadow-md"
