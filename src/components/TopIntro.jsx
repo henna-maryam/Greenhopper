@@ -18,6 +18,18 @@ const TopIntro = ({ packages = [] }) => {
 
   const images = [ bg1, bg2, bg3, bg4, bg5, bg7, bg8, bg10]
 
+  // Preload images to prevent loading gaps
+  useEffect(() => {
+    const preloadImage = (src) => {
+      const img = new Image();
+      img.src = src;
+    };
+
+    // Preload all images
+    images.forEach(image => {
+      preloadImage(image);
+    });
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -36,7 +48,7 @@ const TopIntro = ({ packages = [] }) => {
         backgroundImage: `url(${images[currentImageIndex]})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        transition: 'background-image 0.3s ease-in-out',
+        transition: 'background-image 0.5s ease-in-out',
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/10" />
