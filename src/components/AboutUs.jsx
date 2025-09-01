@@ -31,10 +31,10 @@ const AboutUs = () => {
       {/* Company Overview Section */}
       <section id='about' className="py-20 bg-[#1F2937] border-t border-[#5B8424]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center text-center md:text-left">
             <div>
               <h2 className="text-4xl font-bold text-white mb-6">Your Gateway to Extraordinary Adventures</h2>
-              <p className="text-gray-300 mb-8 text-lg">
+              <p className="text-gray-300 mb-8 text-lg text-justify">
                 Greenhopper Holidays is your gateway to unforgettable travel experiences across India. Founded by industry experts with over 20 years of expertise, we specialize in adventure, cultural, religious, natural, and wildlife tours. With offices in Cochin and Kottakal, we blend professional service with authentic Indian hospitality. Our 24/7 team handles every detail—travel planning, itinerary design, hotel bookings, ticketing, transport, and personalized holiday packages—so you can enjoy a seamless journey. Whether it’s trekking the Himalayas, relaxing on serene beaches, or exploring India’s spiritual and cultural richness, Greenhopper promises journeys that are personalized, professional, and truly memorable.
               </p>
               <div className="grid grid-cols-3 gap-6">
@@ -52,15 +52,12 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center">
               <img
-              src={badge}
-              alt="10 Years of Trust and Experience Badge"
-              className="w-56 h-56 sm:w-20 sm:h-20 md:w-72 md:h-72 drop-shadow-2xl ml-56"
-            />
-              {/* <div className="absolute -bottom-6 -left-6 bg-[#5B8424] text-white p-6 rounded-lg">
-                <p className="text-lg font-semibold">Trusted by thousands of travelers worldwide</p>
-              </div> */}
+                src={badge}
+                alt="10 Years of Trust and Experience Badge"
+                className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-72 lg:h-72 drop-shadow-2xl"
+              />
             </div>
           </div>
         </div>
