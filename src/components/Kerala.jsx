@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaLeaf, FaUmbrellaBeach, FaTree, FaWater, FaMountain } 
 import kerala from '../assets/kerala.webp';
 import alleppey from '../assets/Alleppey.webp';
 import munnar from '../assets/munnar.webp';
-import kochi from '../assets/Kochi.webp';
+import kochi from '../assets/kochi.webp';
 import thekkady from '../assets/thekkady.webp';
 import athirapally from '../assets/athirapally.webp';
 import kumarakom from '../assets/kumarakom.webp';
