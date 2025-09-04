@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import {  FaWater, FaMountain, FaGem, FaCity, FaUmbrellaBeach, FaLeaf } from 'react-icons/fa';
 import srilanka from '../assets/srilanka.webp';
 import kandy from '../assets/Kandy.webp';
@@ -34,6 +35,38 @@ const DestinationCard = ({ title, description, icon, image }) => {
 };
 
 const Srilanka = () => {
+  const navigate = useNavigate();
+
+  const handlePlanTrip = () => {
+    // Scroll to the destinations section within the same page
+    const destinationsSection = document.getElementById('destinations');
+    if (destinationsSection) {
+      destinationsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleBookAdventure = () => {
+    // Navigate to home page and scroll to booking form
+    navigate('/');
+    setTimeout(() => {
+      const bookingSection = document.getElementById('booking');
+      if (bookingSection) {
+        bookingSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
+  const handleViewPackages = () => {
+    // Navigate to home page and scroll to packages section
+    navigate('/');
+    setTimeout(() => {
+      const packagesSection = document.getElementById('packages');
+      if (packagesSection) {
+        packagesSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   const destinations = [
     {
       title: "Kandy",
@@ -96,7 +129,10 @@ const Srilanka = () => {
             <p className="text-xl text-gray-200 mb-8">
               The Pearl of the Indian Ocean - A Tapestry of Culture, Nature and Adventure
             </p>
-            <button className="bg-[#5B8424] text-white px-8 py-3 rounded-lg hover:bg-[#5B8424]/80 transition-colors shadow-lg text-lg font-medium">
+            <button 
+              onClick={handlePlanTrip}
+              className="bg-[#5B8424] text-white px-8 py-3 rounded-lg hover:bg-[#5B8424]/80 transition-colors shadow-lg text-lg font-medium"
+            >
               Plan Your Trip
             </button>
           </div>
@@ -148,7 +184,7 @@ const Srilanka = () => {
       </section>
 
       {/* Destinations Section */}
-      <section className="py-20 bg-[#111111]">
+      <section id="destinations" className="py-20 bg-[#111111]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-12 text-white">
             Top Destinations in Sri Lanka
@@ -176,10 +212,16 @@ const Srilanka = () => {
             we'll handle all the details for an unforgettable journey.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-[#5B8424] text-white px-6 py-3 rounded-lg hover:bg-[#5B8424]/80 transition-colors shadow-md">
+            <button 
+              onClick={handleBookAdventure}
+              className="bg-[#5B8424] text-white px-6 py-3 rounded-lg hover:bg-[#5B8424]/80 transition-colors shadow-md"
+            >
               Book Your Sri Lanka Adventure
             </button>
-            <button className="border border-[#5B8424] text-white px-6 py-3 rounded-lg hover:bg-[#5B8424]/10 transition-colors shadow-md">
+            <button 
+              onClick={handleViewPackages}
+              className="border border-[#5B8424] text-white px-6 py-3 rounded-lg hover:bg-[#5B8424]/10 transition-colors shadow-md"
+            >
               View All Packages
             </button>
           </div>
