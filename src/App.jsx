@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import TopIntro from './components/TopIntro'
 import Header from './components/Header'
@@ -25,21 +26,24 @@ function App() {
   const packages = [
     {
       title: 'Kerala',
-      description: 'From tranquil houseboat cruises to vibrant cultural traditions, Kerala offers a perfect blend of relaxation, adventure, and timeless charm.',
+      description: 'From tranquil houseboat cruises to vibrant cultural traditions, Kerala offers a perfect blend of relaxation, adventure, and timeless charm.',
       image: kl,
-      price: '35000 INR /-'
+      price: '35000 INR /-',
+      id: 'kerala'
     },
     {
       title: 'Sri Lanka',
       description: 'Experience the pearl of Indian Ocean with ancient temples, pristine beaches, and exotic wildlife.',
       image: sl,
-      price: '53777 INR /-'
+      price: '53777 INR /-',
+      id: 'srilanka'
     },
     {
       title: 'Malaysia',
-      description: 'From the iconic Petronas Towers to tranquil islands and vibrant street markets, Malaysia offers a perfect blend of nature, culture, and unforgettable experiences',
+      description: 'From the iconic Petronas Towers to tranquil islands and vibrant street markets, Malaysia offers a perfect blend of nature, culture, and unforgettable experiences',
       image: ml,
-      price: '54692 INR /-'
+      price: '54692 INR /-',
+      id: 'malaysia'
     }
   ]
 
@@ -96,20 +100,21 @@ function App() {
 
   return (
     <div className="min-h-screen bg-black text-white">
+
       <Navbar />
       
       {/* TopIntro - Always visible, no animation needed */}
       <TopIntro packages={packages} />
       
       {/* Header - Fade up animation */}
-      <AnimatedSection 
+      {/* <AnimatedSection 
         animationType="fadeUp" 
         delay={0.2} 
         duration={1}
         yOffset={80}
       >
         <Header />
-      </AnimatedSection>
+      </AnimatedSection> */}
       
 
       
@@ -131,6 +136,7 @@ function App() {
           />
         </div>
       </StaggeredAnimation>
+      
       
       {/* AboutUs - Slide in from right */}
       <AnimatedSection 

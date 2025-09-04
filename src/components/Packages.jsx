@@ -9,7 +9,10 @@ const PackageCard = ({ pkg, onBookNow }) => {
       {/* Content */}
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-2xl font-bold text-white mb-2">{pkg.title}</h3>
-        <p className="text-gray-400 mb-6 flex-grow">{pkg.description}</p>
+        <p className="text-gray-400 mb-4 flex-grow">{pkg.description}</p>
+        <div className="mt-2">
+          <button className="text-white px-2 py-2 rounded-md hover:bg-[#5B8424]/80 transition-colors shadow-md border border-[#5B8424]">Explore</button>
+        </div>
 
         {/* Price + Button Row */}
         <div className="flex items-center justify-between mt-auto">
