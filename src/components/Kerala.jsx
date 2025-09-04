@@ -4,6 +4,10 @@ import { FaMapMarkerAlt, FaLeaf, FaUmbrellaBeach, FaTree, FaWater, FaMountain } 
 import kerala from '../assets/kerala.webp';
 import alleppey from '../assets/Alleppey.webp';
 import munnar from '../assets/munnar.webp';
+import kochi from '../assets/Kochi.webp';
+import thekkady from '../assets/thekkady.webp';
+import athirapally from '../assets/athirapally.webp';
+import kumarakom from '../assets/kumarakom.webp';
 
 const DestinationCard = ({ title, description, icon, image }) => {
   return (
@@ -24,11 +28,6 @@ const DestinationCard = ({ title, description, icon, image }) => {
           {!image && <h3 className="text-2xl font-bold text-white">{title}</h3>}
         </div>
         <p className="text-gray-400 mb-4">{description}</p>
-        <div className="mt-auto">
-          <button className="text-white px-4 py-2 rounded-lg hover:bg-[#5B8424]/80 transition-colors shadow-md border border-[#5B8424] w-full">
-            Explore More
-          </button>
-        </div>
       </div>
     </div>
   );
@@ -72,7 +71,7 @@ const Kerala = () => {
       title: "Kochi",
       description: "The cultural port city with colonial charm, spice markets, and Chinese fishing nets. Fort Kochi, Mattancherry Palace, and vibrant art scenes attract visitors. A perfect mix of heritage and modern life.",
       icon: <FaMapMarkerAlt className="text-2xl text-[#5B8424]" />,
-      image: null
+      image: kochi
     },
     {
       title: "Munnar",
@@ -90,19 +89,19 @@ const Kerala = () => {
       title: "Thekkady",
       description: "Home to Periyar Wildlife Sanctuary, rich with elephants, bison, and birdlife. Tourists enjoy boat safaris, trekking, and spice plantation tours. A hotspot for adventure and eco-tourism.",
       icon: <FaTree className="text-2xl text-[#5B8424]" />,
-      image: null
+      image: thekkady
     },
     {
       title: "Kumarakom",
       description: "A tranquil village on Vembanad Lake, ideal for houseboat stays and birdwatching. The Kumarakom Bird Sanctuary hosts migratory species. Perfect for relaxation and Ayurveda retreats.",
       icon: <FaLeaf className="text-2xl text-[#5B8424]" />,
-      image: null
+      image: kumarakom
     },
     {
       title: "Athirapally",
       description: "Kerala's \"Niagara Falls,\" surrounded by lush greenery and forests. A favorite spot for nature photography and film shoots. Majestic waterfalls create a breathtaking view in monsoon.",
       icon: <FaUmbrellaBeach className="text-2xl text-[#5B8424]" />,
-      image: null
+      image: athirapally
     }
   ];
 

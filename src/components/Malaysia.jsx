@@ -1,8 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaMapMarkerAlt, FaCity, FaUmbrellaBeach, FaMountain, FaLandmark, FaMosque } from 'react-icons/fa';
+import { FaCity, FaUmbrellaBeach, FaMountain, FaLandmark, FaMosque } from 'react-icons/fa';
+import { FaBridge } from 'react-icons/fa6';
 import malaysia from '../assets/malaysia.webp';
 import langkawi from '../assets/Langkawi.webp';
+import genting from '../assets/genting_highland.webp';
+import istana from '../assets/Istananegara.webp';
+import masjid from '../assets/MasjidNegara.webp';
+import saloma from '../assets/SalomaBridge.webp';
+
 
 const DestinationCard = ({ title, description, icon, image }) => {
   return (
@@ -23,11 +29,6 @@ const DestinationCard = ({ title, description, icon, image }) => {
           {!image && <h3 className="text-2xl font-bold text-white">{title}</h3>}
         </div>
         <p className="text-gray-400 mb-4">{description}</p>
-        <div className="mt-auto">
-          <button className="text-white px-4 py-2 rounded-lg hover:bg-[#5B8424]/80 transition-colors shadow-md border border-[#5B8424] w-full">
-            Explore More
-          </button>
-        </div>
       </div>
     </div>
   );
@@ -83,25 +84,25 @@ const Malaysia = () => {
       title: "Genting Highlands",
       description: "A cool hilltop retreat just outside Kuala Lumpur, famous for its casinos, theme parks, and shopping. Enjoy breathtaking views, cable car rides, and endless entertainment. A perfect escape from the city heat.",
       icon: <FaMountain className="text-2xl text-[#5B8424]" />,
-      image: null
+      image: genting
     },
     {
       title: "King's Palace (Istana Negara)",
       description: "A majestic symbol of Malaysia's monarchy, with stunning architecture and manicured grounds. Visitors can admire the grandeur from outside the gates. A must-see landmark showcasing royal heritage.",
       icon: <FaLandmark className="text-2xl text-[#5B8424]" />,
-      image: null
+      image: istana
     },
     {
       title: "National Mosque (Masjid Negara)",
       description: "An architectural masterpiece blending modern design with Islamic artistry. Its striking blue dome and 73-meter minaret dominate the skyline. A peaceful sanctuary welcoming visitors with grace.",
       icon: <FaMosque className="text-2xl text-[#5B8424]" />,
-      image: null
+      image: masjid
     },
     {
       title: "Saloma Bridge",
       description: "A dazzling pedestrian bridge connecting Kampung Baru and KLCC. Its colorful LED lights create a spectacular view after dark. A perfect spot for photos with the city skyline.",
-    //   icon: <FaBridge className="text-2xl text-[#5B8424]" />,
-      image: null
+      icon: <FaBridge className="text-2xl text-[#5B8424]" />,
+      image: saloma
     }
   ];
 

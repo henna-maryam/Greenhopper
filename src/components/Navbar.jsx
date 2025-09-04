@@ -30,8 +30,6 @@ const Navbar = () => {
   const links = [
     { label: 'Home', href: '/', isRoute: true },
     { label: 'About Us', href: 'about', isRoute: false, isSection: true },
-    { label: 'Premium', href: 'packages', isRoute: false, isSection: true },
-    { label: 'Blogs', href: 'blogs', isRoute: false, isSection: true },
     { label: 'Contact Us', href: 'contact', isRoute: false, isSection: true },
   ]
 

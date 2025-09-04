@@ -1,9 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import {  FaWater, FaMountain, FaGem, FaCity, FaUmbrellaBeach, FaLeaf } from 'react-icons/fa';
+import { GiByzantinTemple } from "react-icons/gi";
 import srilanka from '../assets/srilanka.webp';
 import kandy from '../assets/Kandy.webp';
 import bentota from '../assets/bentota.webp';
+import sembwatte from '../assets/sembuwatte.webp';
+import nuwara from '../assets/nuwara_eliya.webp';
+import golden from '../assets/golden_beaches.webp';
+import colombo from '../assets/colombo.webp';
 
 const DestinationCard = ({ title, description, icon, image }) => {
   return (
@@ -24,11 +29,6 @@ const DestinationCard = ({ title, description, icon, image }) => {
           {!image && <h3 className="text-2xl font-bold text-white">{title}</h3>}
         </div>
         <p className="text-gray-400 mb-4">{description}</p>
-        <div className="mt-auto">
-          <button className="text-white px-4 py-2 rounded-lg hover:bg-[#5B8424]/80 transition-colors shadow-md border border-[#5B8424] w-full">
-            Explore More
-          </button>
-        </div>
       </div>
     </div>
   );
@@ -71,7 +71,7 @@ const Srilanka = () => {
     {
       title: "Kandy",
       description: "A city steeped in history, Kandy is the heart of Sri Lanka's cultural heritage. The Temple of the Tooth and scenic Kandy Lake make it both spiritual and serene. Its vibrant traditions and hill-country charm captivate every traveler.",
-    //   icon: <FaTempleHindu className="text-2xl text-[#5B8424]" />,
+      icon: <GiByzantinTemple className="text-2xl text-[#5B8424]" />,
       image: kandy
     },
     {
@@ -84,7 +84,7 @@ const Srilanka = () => {
       title: "Sembuwatte Lake",
       description: "A hidden gem nestled in the misty hills of Matale. This man-made lake surrounded by tea plantations offers breathtaking scenery and cool mountain air. Perfect for picnics, boating, and peaceful getaways.",
       icon: <FaWater className="text-2xl text-[#5B8424]" />,
-      image: null
+      image: sembwatte
     },
     {
       title: "Gem Museum",
@@ -96,19 +96,19 @@ const Srilanka = () => {
       title: "Nuwara Eliya (Little England)",
       description: "A charming hill station with colonial-era architecture and lush tea gardens. Cool climate, flower-filled parks, and cozy cottages give it an old English feel. A must-visit for relaxation and scenic beauty.",
       icon: <FaMountain className="text-2xl text-[#5B8424]" />,
-      image: null
+      image: nuwara
     },
     {
       title: "Golden Beach",
       description: "Stretching sands kissed by turquoise waters create a tropical paradise. Relax under swaying palms or dive into thrilling water sports. A dream destination for sun, sea, and serenity.",
       icon: <FaUmbrellaBeach className="text-2xl text-[#5B8424]" />,
-      image: null
+      image: golden
     },
     {
       title: "Colombo",
       description: "Sri Lanka's vibrant capital blends modern life with colonial charm. Explore bustling streets, seaside promenades, and cultural landmarks. A city alive with shopping, dining, and rich history.",
       icon: <FaCity className="text-2xl text-[#5B8424]" />,
-      image: null
+      image: colombo
     }
   ];
 
@@ -154,7 +154,7 @@ const Srilanka = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-6 bg-[#111111] rounded-lg border border-[#5B8424]/20">
               <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                {/* <FaTempleHindu className="text-3xl text-[#5B8424]" /> */}
+                <GiByzantinTemple className="text-3xl text-[#5B8424]" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Rich Heritage</h3>
               <p className="text-gray-400">
