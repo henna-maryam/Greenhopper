@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { FaWhatsapp } from 'react-icons/fa'
 import logo from '../assets/logo-white.png'
 
 const Navbar = () => {
@@ -109,6 +110,17 @@ const Navbar = () => {
 
           {/* Right Section */}
           <div className="flex items-center gap-3">
+            {/* WhatsApp Button */}
+            <a 
+              href="https://wa.me/+918157901999" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full p-2 bg-green-500 text-white hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+              aria-label="Chat on WhatsApp"
+            >
+              <FaWhatsapp size={20} />
+            </a>
+            
             {/* Quick Book (Desktop only) */}
             <button
               onClick={() => handleSectionClick('booking')}
@@ -197,6 +209,18 @@ const Navbar = () => {
               >
                 Quick Book
               </button>
+              
+              {/* WhatsApp Button (Mobile) */}
+              <a 
+                href="https://wa.me/+918157901999" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="mt-3 flex items-center justify-center gap-2 w-full text-center rounded-xl border-2 border-green-500 bg-green-500 px-6 py-3 text-sm font-semibold text-white hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+                aria-label="Chat on WhatsApp"
+              >
+                <FaWhatsapp size={18} />
+                <span>Chat on WhatsApp</span>
+              </a>
             </div>
           </div>
         )}
