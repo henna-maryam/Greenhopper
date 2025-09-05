@@ -116,7 +116,8 @@ const Footer = () => {
                 <div>
                   <h4 className="text-white font-semibold mb-2">India</h4>
                   <p className="text-gray-400 text-sm mb-1">KM4/812- Smart Trade City, Kottakkal, Malappuram Dt. 676553</p>
-                  <p className="text-gray-400 text-sm mb-3">Ph: +91 7025 901 901</p>
+                  <p className="text-gray-400 text-sm mb-1">Ph: +91 8156901999 , +91 8157901999</p>
+                  <p className="text-gray-400 text-sm mb-3">Email: info@greenhopperholidays.com </p>
                   
                   {/* Social Media Icons */}
                   <div className="flex space-x-3">

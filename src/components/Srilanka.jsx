@@ -86,12 +86,12 @@ const Srilanka = () => {
       icon: <FaWater className="text-2xl text-[#5B8424]" />,
       image: sembwatte
     },
-    {
-      title: "Gem Museum",
-      description: "Discover Sri Lanka's world-famous treasures at the Gem Museum. Learn about the island's dazzling sapphires and precious stones through fascinating displays. A sparkling journey into the country's rich heritage.",
-      icon: <FaGem className="text-2xl text-[#5B8424]" />,
-      image: null
-    },
+    // {
+    //   title: "Gem Museum",
+    //   description: "Discover Sri Lanka's world-famous treasures at the Gem Museum. Learn about the island's dazzling sapphires and precious stones through fascinating displays. A sparkling journey into the country's rich heritage.",
+    //   icon: <FaGem className="text-2xl text-[#5B8424]" />,
+    //   image: null
+    // },
     {
       title: "Nuwara Eliya (Little England)",
       description: "A charming hill station with colonial-era architecture and lush tea gardens. Cool climate, flower-filled parks, and cozy cottages give it an old English feel. A must-visit for relaxation and scenic beauty.",
