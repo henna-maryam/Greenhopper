@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import logo from '../assets/logo-white.png'
+import logo from '../assets/logo.webp'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaArrowUp } from 'react-icons/fa'
 
 const Footer = () => {
@@ -75,7 +75,7 @@ const Footer = () => {
             {/* Brand Information */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <img src={logo} alt="GreenHopper" className="h-16 w-auto" />
+                <img src={logo} alt="GreenHopper" className="h-30 w-auto" />
                 <div className="text-sm text-gray-300">
                   <p>Welcome you to enjoy fabulous and unique experience on Greenhopper holiday packages.</p>
                 </div>
@@ -87,7 +87,7 @@ const Footer = () => {
               <h3 className="text-white font-bold text-lg">Quick Links</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-3">
-                  <a href="#about" className="block text-gray-400 hover:text-white transition-colors">About GreenHopper</a>
+                  <a href="/about" className="block text-gray-400 hover:text-white transition-colors">About GreenHopper</a>
                   <a href="#packages" className="block text-gray-400 hover:text-white transition-colors">Destinations</a>
                   <a href="#packages" className="block text-gray-400 hover:text-white transition-colors">Packages</a>
                   <a href="#home" className="block text-gray-400 hover:text-white transition-colors">Blogs</a>
@@ -111,13 +111,23 @@ const Footer = () => {
                   <p className="text-gray-400 text-sm mb-1">3rd Floor, Room No:328, R.K.M Building, Al Qiyadah, Metro Exit 2, Dubai, UAE</p>
                   <p className="text-gray-400 text-sm">Ph: 00 91 81579 01999</p>
                 </div>
+                <div>
+                  <h4 className="text-white font-semibold mb-2">SAUDI ARABIA</h4>
+                  <p className="text-gray-400 text-sm mb-1">KING FAHAD BIN ABDULAZIZ ST., AL AMAMRA DAMMAM 32415, KINGDOM OF SAUDI ARABIA</p>
+                  <p className="text-gray-400 text-sm">Ph: +966 50 745 4255</p>
+                </div>
                 
                 {/* India Contact */}
                 <div>
                   <h4 className="text-white font-semibold mb-2">India</h4>
-                  <p className="text-gray-400 text-sm mb-1">KM4/812- Smart Trade City, Kottakkal, Malappuram Dt. 676553</p>
+                  <p className="text-gray-400 text-sm mb-3">KM4/812- Smart Trade City, Kottakkal, Malappuram Dt. 676553</p>
+
+                  <div>
+                  <p className="text-gray-400 text-sm mb-3">Greenhopper Holidays Pvt Ltd 
+                  4/461, Second Floor, Suite #1855 Valamkottil Towers, Judgemukku,  Kakkanad, Kochi, Kerala India, PIN 682021</p>
                   <p className="text-gray-400 text-sm mb-1">Ph: +91 8156901999 , +91 8157901999</p>
                   <p className="text-gray-400 text-sm mb-3">Email: info@greenhopperholidays.com </p>
+                </div>
                   
                   {/* Social Media Icons */}
                   <div className="flex space-x-3">

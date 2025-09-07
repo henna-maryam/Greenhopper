@@ -27,7 +27,7 @@ const testimonials = [
 
 const AboutUs = () => {
   return (
-    <div className="bg-[#111111]">
+    <div id='about' className="bg-[#111111]">
       {/* Company Overview Section */}
       <section id='about' className="py-20 bg-[#1F2937] border-t border-[#5B8424]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
