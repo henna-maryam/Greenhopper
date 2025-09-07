@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { FaWhatsapp } from 'react-icons/fa'
-import logo from '../assets/logo-white.png'
+import logo from '../assets/logo.webp'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -30,7 +30,7 @@ const Navbar = () => {
 
   const links = [
     { label: 'Home', href: '/', isRoute: true },
-    { label: 'About Us', href: 'about', isRoute: false, isSection: true },
+    { label: 'About Us', href: '/about', isRoute: true, isSection: true },
     { label: 'Contact Us', href: 'contact', isRoute: false, isSection: true },
   ]
 
@@ -47,7 +47,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center gap-3 mt-5">
             <Link to="/">
-              <img src={logo} alt="GreenHopper" className="h-20 w-auto" />
+              <img src={logo} alt="GreenHopper" className="h-30 w-auto" />
             </Link>
           </div>
 

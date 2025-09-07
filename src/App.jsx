@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import KeralaPage from './pages/KeralaPage';
 import MalaysiaPage from './pages/MalaysiaPage';
 import SriLankaPage from './pages/SriLankaPage';
+import AboutUs from './components/AboutUs';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/kerala" element={<KeralaPage />} />
         <Route path="/malaysia" element={<MalaysiaPage />} />
         <Route path="/srilanka" element={<SriLankaPage />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
     </BrowserRouter>
   );
