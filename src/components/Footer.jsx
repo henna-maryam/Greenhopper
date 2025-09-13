@@ -120,11 +120,14 @@ const Footer = () => {
                 {/* India Contact */}
                 <div>
                   <h4 className="text-white font-semibold mb-2">India</h4>
-                  <p className="text-gray-400 text-sm mb-3">KM4/812- Smart Trade City, Kottakkal, Malappuram Dt. 676553</p>
+                  <p className="text-gray-400 text-sm mb-1">KM4/812- Smart Trade City, Kottakkal, Malappuram Dt. 676553</p>
+                  <p className="text-gray-400 text-sm mb-3">Ph: +91 7902277575</p>
 
                   <div>
-                  <p className="text-gray-400 text-sm mb-3">Greenhopper Holidays Pvt Ltd 
+                  <p className="text-gray-400 text-sm mb-1">Greenhopper Holidays Pvt Ltd 
                   4/461, Second Floor, Suite #1855 Valamkottil Towers, Judgemukku,  Kakkanad, Kochi, Kerala India, PIN 682021</p>
+                  <p className="text-gray-400 text-sm mb-3">Ph: +91 7902277575</p>
+
                   <p className="text-gray-400 text-sm mb-1">Ph: +91 8156901999 , +91 8157901999</p>
                   <p className="text-gray-400 text-sm mb-3">Email: info@greenhopperholidays.com </p>
                 </div>
