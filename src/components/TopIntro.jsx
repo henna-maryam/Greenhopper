@@ -51,7 +51,7 @@ const TopIntro = ({ packages = [] }) => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 flex flex-col justify-end h-full">
         <div className="flex flex-col gap-4 max-w-xl mb-8">
           <div className="mb-2">
-            <p className="uppercase tracking-widest text-sm text-white/80 mb-2 pt-55">Mountains | Beaches | Skyscrapers</p>
+            <p className="uppercase tracking-widest text-sm text-white/80 mb-2 pt-55">Heritage City | Hill Station | Wild Life | Backwater | Beach</p>
             <p className="text-6xl sm:text-4xl md:text-6xl font-normal leading-tight drop-shadow"
             style={{ fontFamily: '"Story Script", sans-serif' }}>
               From God's Own Country to Tropical Wonders
