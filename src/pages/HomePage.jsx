@@ -26,6 +26,7 @@ const HomePage = () => {
     nationality: '',
     destination: '',
     preferredDate: '',
+    numberOfDays: '',
     additionalNotes: ''
   });
 
@@ -53,47 +54,17 @@ const HomePage = () => {
     }
   ];
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const API_BASE_URL = import.meta.env.VITE_API_URL;
-    try {
-      const res = await fetch(`${API_BASE_URL}/bookings`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          nationality: formData.nationality,
-          destination: formData.destination,
-          preferredDate: formData.preferredDate,
-          additionalNotes: formData.additionalNotes
-        })
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data?.message || 'Failed to submit request');
-
-      // show success toast
-      const banner = document.createElement('div');
-      banner.className = 'fixed top-4 left-1/2 -translate-x-1/2 bg-[#5B8424] text-white px-6 py-3 rounded-lg shadow-lg border border-[#5B8424]/50 z-50';
-      banner.textContent = 'Booking request submitted successfully!';
-      document.body.appendChild(banner);
-      setTimeout(() => banner.remove(), 3000);
-
-      setFormData({
-        name: '',
-        email: '',
-        nationality: '',
-        destination: '',
-        preferredDate: '',
-        additionalNotes: ''
-      });
-    } catch (err) {
-      const banner = document.createElement('div');
-      banner.className = 'fixed top-4 left-1/2 -translate-x-1/2 bg-red-700 text-white px-6 py-3 rounded-lg shadow-lg border border-red-500/50 z-50';
-      banner.textContent = err.message;
-      document.body.appendChild(banner);
-      setTimeout(() => banner.remove(), 3000);
-    }
+  const handleBookingSuccess = () => {
+    // Reset form data after successful booking
+    setFormData({
+      name: '',
+      email: '',
+      nationality: '',
+      destination: '',
+      preferredDate: '',
+      numberOfDays: '',
+      additionalNotes: ''
+    });
   };
 
   const handleChange = (e) => {
@@ -260,8 +231,8 @@ const HomePage = () => {
         <div id="booking">
           <BookingForm 
             formData={formData}
-            onSubmit={handleSubmit}
             onChange={handleChange}
+            onSuccess={handleBookingSuccess}
           />
         </div>
       </AnimatedSection>
