@@ -2,6 +2,7 @@ import React from 'react'
 import { CircularTestimonials } from '../components/ui/circular-testimonials'
 import { FaRoute, FaHotel, FaCar, FaUserTie, FaMapMarkedAlt, FaHeadset, FaPhone, FaEnvelope, FaMapMarkerAlt, FaGlobe } from 'react-icons/fa'
 import badge from '../assets/badge-removebg-preview.png'
+import chairman from '../assets/chairman.jpeg'
 import Footer from './Footer';
 import AnimatedSection from './AnimatedSection'
 
@@ -79,6 +80,20 @@ const AboutUs = () => {
             <p className="text-gray-300 mb-4 text-lg text-justify">
               Headquartered in <span className="italic">Cochin</span> (Queen of Arabian Sea), in <span className="italic">God's Own Country - Kerala</span>, with our corporate office strategically located in <span className="italic">Kottakkal</span> (Hub of Ayurveda) in North Kerala, we are positioned to service our esteemed guests anywhere in the Indian Subcontinent.
             </p>
+          </div>
+        </section>
+      </AnimatedSection>
+
+      {/* Chairman's Photo */}
+      <AnimatedSection animationType="fadeUp" delay={0.15}>
+        <section className="py-12 bg-[#111111] border-t border-[#5B8424]/10">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <h3 className="text-3xl font-bold mb-4 text-[#5B8424]">Meet our Chief Environmental Officer</h3>
+            <img
+              src={chairman}
+              alt="Chairman of Greenhopper Holidays"
+              className="mx-auto rounded-lg shadow-lg max-w-sm"
+            />
           </div>
         </section>
       </AnimatedSection>
