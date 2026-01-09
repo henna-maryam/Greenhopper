@@ -117,7 +117,7 @@ const AboutUs = () => {
                 Above all, I bow in gratitude to the Almighty for guiding us through this glorious decade of service and success.
               </p>
               <p className="italic leading-relaxed text-lg mt-4">
-                Here's to the journeys behind us, and the countless adventures that await.
+                Here's to the journeys behind us, and the countless adventures that await."
               </p>
             </blockquote>
           </div>
