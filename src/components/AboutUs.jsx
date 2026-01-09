@@ -2,7 +2,7 @@ import React from 'react'
 import { CircularTestimonials } from '../components/ui/circular-testimonials'
 import { FaRoute, FaHotel, FaCar, FaUserTie, FaMapMarkedAlt, FaHeadset, FaPhone, FaEnvelope, FaMapMarkerAlt, FaGlobe } from 'react-icons/fa'
 import badge from '../assets/badge-removebg-preview.png'
-import chairman from '../assets/chairman.jpeg'
+import chairman from '../assets/chairman2.jpeg'
 import Footer from './Footer';
 import AnimatedSection from './AnimatedSection'
 
@@ -88,12 +88,38 @@ const AboutUs = () => {
       <AnimatedSection animationType="fadeUp" delay={0.15}>
         <section className="py-12 bg-[#111111] border-t border-[#5B8424]/10">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <h3 className="text-3xl font-bold mb-4 text-[#5B8424]">Meet our Chief Environmental Officer</h3>
+            <h3 className="text-3xl font-bold mb-4 text-[#5B8424]">Meet our Chairman</h3>
             <img
               src={chairman}
               alt="Chairman of Greenhopper Holidays"
               className="mx-auto rounded-lg shadow-lg max-w-sm"
             />
+            <blockquote className="mt-8 text-gray-200 text-left bg-[#1E1E1E] border border-[#5B8424]/30 rounded-xl p-6 shadow-inner">
+              <p className="italic leading-relaxed text-lg">
+                “As I reflect on our journey, my heart swells with gratitude and wonder. Ten years ago, on a December morning in 2015, Green Hopper Holidays was born from a simple dream—to craft journeys that touch the soul, not just tick destinations off a list.
+              </p>
+              <p className="italic leading-relaxed text-lg mt-4">
+                A decade has passed like the turning of seasons, and what a magnificent passage it has been. Thousands of travelers from the Middle East, Far East, Europe, and North India have entrusted us with their precious moments of escape and discovery. Together, we've wandered through the emerald backwaters of Kerala, traced the ancient temples of South India, stood humbled before the Himalayan peaks of the North, embraced the island serenity of Sri Lanka and the Maldives, and savored the vibrant tapestry of Malaysia.
+              </p>
+              <p className="italic leading-relaxed text-lg mt-4">
+                What fills me with the deepest pride isn't merely the places we've explored, but how we've evolved. In those early years, we were pioneers—among the first in Kerala's travel industry to harness the power of digital marketing and social media. We learned, adapted, and grew. Today, we find ourselves in a beautiful space where our work speaks for itself. Our customers have become our ambassadors, their recommendations our most treasured endorsement. Marketing campaigns have given way to something far more precious: genuine trust passed from one traveler to another.
+              </p>
+              <p className="italic leading-relaxed text-lg mt-4">
+                We've always believed in listening—truly listening—to what makes a journey memorable. The guest-friendly innovations we introduced weren't born in boardrooms but from conversations with those who traveled with us. I smile when I see others in the industry adopting approaches we once pioneered. Imitation, they say, is the sincerest form of flattery.
+              </p>
+              <p className="italic leading-relaxed text-lg mt-4">
+                As we step into our second decade, our commitment deepens. We're developing new tools and touches designed to ensure every journey with us leaves an indelible imprint of joy on your memory. Because that's what this has always been about—not just trips, but treasured memories that last a lifetime.
+              </p>
+              <p className="italic leading-relaxed text-lg mt-4">
+                Ten years of serving with integrity and passion. Ten years of building relationships, not just bookings. The trust, respect, and support we've received from this industry and from you, our cherished travelers, humbles us beyond words.
+              </p>
+              <p className="italic leading-relaxed text-lg mt-4">
+                Above all, I bow in gratitude to the Almighty for guiding us through this glorious decade of service and success.
+              </p>
+              <p className="italic leading-relaxed text-lg mt-4">
+                Here's to the journeys behind us, and the countless adventures that await.
+              </p>
+            </blockquote>
           </div>
         </section>
       </AnimatedSection>
