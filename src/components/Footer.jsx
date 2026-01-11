@@ -113,8 +113,8 @@ const Footer = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-2">SAUDI ARABIA</h4>
-                  <p className="text-gray-400 text-sm mb-1">KING FAHAD BIN ABDULAZIZ ST., AL AMAMRA DAMMAM 32415, KINGDOM OF SAUDI ARABIA</p>
-                  <p className="text-gray-400 text-sm">Ph: +966 50 745 4255</p>
+                  <p className="text-gray-400 text-sm mb-1">Greenhopper General Contracting Company,402, Sulaimaniya Building, King Saud St, AlAmamrah Dt,Damman, 32415, Kingdom of Saudi Arabia</p>
+                  <p className="text-gray-400 text-sm">Ph: +966 50 745 4255 || +966 13 854 5985</p>
                 </div>
                 
                 {/* India Contact */}

@@ -123,7 +123,7 @@ const HomePage = () => {
           {/* Company Overview Section */}
           <section id='about' className="py-20 bg-[#1F2937] border-t border-[#5B8424]/20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid md:grid-cols-2 gap-12 items-center text-center md:text-left">
+              <div className="grid gap-12 text-center md:grid-cols-[minmax(0,_1fr)_auto]">
                 <div>
                   <h2 className="text-4xl font-bold text-white mb-6">Where Every Journey Feels Like Home   </h2>
                   <p className="text-gray-300 mb-8 text-lg text-justify">
@@ -148,11 +148,11 @@ const HomePage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex justify-center ml-8 sm:ml-16 md:ml-48">
+                <div className="flex items-center justify-center ml-8">
                   <img
                     src={badge}
                     alt="10 Years of Trust and Experience Badge"
-                    className="w-72 h-72 sm:w-48 sm:h-48 md:w-10/12 md:h-10/12 lg:w-80 lg:h-80 drop-shadow-2xl"
+                    className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl drop-shadow-2xl"
                   />
                 </div>
               </div>

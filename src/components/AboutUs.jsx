@@ -48,7 +48,7 @@ const AboutUs = () => {
                     <p className="text-gray-400">Years Expertise</p>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-[#5B8424] mb-2">5</h3>
+                    <h3 className="text-2xl font-bold text-[#5B8424] mb-2">10</h3>
                     <p className="text-gray-400">Years in Business</p>
                   </div>
                   <div>
@@ -75,7 +75,7 @@ const AboutUs = () => {
           <div className="max-w-4xl mx-auto px-4">
             <h3 className="text-3xl font-bold mb-4 text-[#5B8424]">Our Story</h3>
             <p className="text-gray-300 mb-4 text-lg text-justify">
-              Within a short span of 5 years, Greenhopper Holidays has been pioneered by industry experts with more than 20 years of experience in diverse fields. We are all set to disrupt the conventional tourism industry with our sole vision of catering to the needs of every traveler, irrespective of the cause of their travel.
+              Within a short span of 10 years, Greenhopper Holidays has been pioneered by industry experts with more than 20 years of experience in diverse fields. We are all set to disrupt the conventional tourism industry with our sole vision of catering to the needs of every traveler, irrespective of the cause of their travel.
             </p>
             <p className="text-gray-300 mb-4 text-lg text-justify">
               Headquartered in <span className="italic">Cochin</span> (Queen of Arabian Sea), in <span className="italic">God's Own Country - Kerala</span>, with our corporate office strategically located in <span className="italic">Kottakkal</span> (Hub of Ayurveda) in North Kerala, we are positioned to service our esteemed guests anywhere in the Indian Subcontinent.

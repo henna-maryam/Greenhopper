@@ -136,7 +136,7 @@ const Kerala = () => {
       <section className="py-20 bg-[#1F2937] border-t border-[#5B8424]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">Experience Kerala</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">Explore Kerala The Right Way</h2>
             <p className="text-gray-300 max-w-3xl mx-auto text-lg">
               Kerala, known as "God's Own Country," is a tropical paradise on India's southwestern Malabar Coast. 
               With its emerald backwaters, misty hill stations, pristine beaches, and vibrant culture, 
