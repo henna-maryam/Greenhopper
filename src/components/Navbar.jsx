@@ -150,7 +150,7 @@ const Navbar = () => {
 
         {/* Mobile Dropdown */}
         {isOpen && (
-          <div className="md:hidden mt-4 space-y-4 bg-black/80 p-4 rounded-xl shadow-lg">
+          <div className="md:hidden mt-4 space-y-4 p-4 rounded-xl shadow-lg">
             <ul className="space-y-4">
               {links.map((l) => (
                 <li key={l.label}>
