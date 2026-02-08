@@ -36,7 +36,7 @@ const FocusCards = ({ cards }) => {
                 alt={card.title}
                 className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
                 <h3 className="text-white text-lg font-semibold">{card.title}</h3>
                 {card.description && (
@@ -62,7 +62,7 @@ const FocusCards = ({ cards }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+              className="absolute inset-0 backdrop-blur-sm"
               onClick={handleClose}
             />
             <motion.div
@@ -72,7 +72,7 @@ const FocusCards = ({ cards }) => {
               className="relative max-w-2xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl"
             >
               <motion.button
-                className="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/20 hover:bg-black/40 transition-colors"
+                className="absolute top-4 right-4 z-10 p-2 rounded-full transition-colors"
                 onClick={handleClose}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -87,7 +87,7 @@ const FocusCards = ({ cards }) => {
                   alt={selectedCard.title}
                   className="w-full h-64 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t via-transparent to-transparent" />
               </div>
               
               <motion.div

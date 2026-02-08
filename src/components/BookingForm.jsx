@@ -483,7 +483,7 @@ const BookingForm = ({ formData, onSubmit, onChange, onSuccess }) => {
       
       {/* Success Modal */}
       {showSuccessModal && (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50 animate-fadeIn">
+        <div className="fixed inset-0 backdrop-blur-sm flex items-center justify-center p-4 z-50 animate-fadeIn">
           <div className="bg-gradient-to-br from-[#1F2937] to-[#111111] border border-[#5B8424]/30 rounded-2xl max-w-md w-full mx-4 shadow-2xl animate-slideUp">
             {/* Success Icon with Animation */}
             <div className="flex flex-col items-center p-8 text-center">

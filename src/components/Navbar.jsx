@@ -51,7 +51,7 @@ const Navbar = () => {
               {/* <span className="w-16 h-3 bg-white rounded-full shadow-md shadow-black/30" /> */}
               <Link
                 to="/"
-                className="bg-white rounded-[1rem] px-4 shadow-2xl shadow-black/40 border border-white/40"
+                className="bg-white rounded-[1rem] px-4 py-10 shadow-2xl shadow-black/40 border border-white/40"
               >
                 <img src={logo} alt="GreenHopper" className="h-16 w-auto" />
               </Link>
@@ -150,7 +150,7 @@ const Navbar = () => {
 
         {/* Mobile Dropdown */}
         {isOpen && (
-          <div className="md:hidden mt-4 space-y-4 bg-black/80 p-4 rounded-xl shadow-lg">
+          <div className="md:hidden mt-4 space-y-4 p-4 rounded-xl shadow-lg">
             <ul className="space-y-4">
               {links.map((l) => (
                 <li key={l.label}>

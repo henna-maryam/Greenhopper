@@ -36,51 +36,38 @@ const TopIntro = ({ packages = [] }) => {
   }, [])
 
   return (
-    <section id="home" className="relative text-white bg-[#050505] py-10 sm:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-stretch">
-          {/* Visual Panel - 60% on desktop */}
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl flex-1 md:basis-3/5 min-h-[260px] md:min-h-[520px] mt-10">
-            <div
-              className="absolute inset-0"
-              style={{
-                backgroundImage: `url(${images[currentImageIndex]})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                transition: 'background-image 0.5s ease-in-out',
-              }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
-          </div>
+    <section
+      id="home"
+      className="relative text-white min-h-[340px] sm:min-h-[400px] md:min-h-[580px]"
+      style={{
+        backgroundImage: `url(${images[currentImageIndex]})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        transition: 'background-image 0.5s ease-in-out',
+      }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/10" />
 
-          {/* Content Panel - 40% on desktop */}
-          <div className="flex-1 md:basis-2/5 flex items-start">
-            <div className="flex flex-col gap-4 max-w-xl">
-
-              <p className="uppercase tracking-widest text-sm text-white/80 font-medium pt-55">
-                Heritage City | Hill Station | Wild Life | Backwater | Beach
-              </p>
-              <p
-                className="uppercase text-6xl sm:text-4xl md:text-5xl lg:text-6xl font-normal leading-tight drop-shadow"
-                style={{
-                  fontFamily: '"Alfa Slab One", serif',
-                  color: 'transparent',
-                  WebkitTextStroke: '2px rgba(255, 255, 255, 0.8)',
-                }}
-              >
-                Travel With Soul, Return With Stories
-              </p>
-              <p
-                className="uppercase text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight drop-shadow"
-                style={{
-                  fontFamily: '"Oswald", sans-serif',
-                  color: 'transparent',
-                  WebkitTextStroke: '1px rgba(255, 255, 255, 0.8)',
-                }}
-              >
-                Your Journey Begins Here
-              </p>
-            </div>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 flex flex-col justify-end h-full">
+        <div className="flex flex-col gap-4 max-w-xl mb-8">
+          <div className="mb-2">
+            <p className="uppercase tracking-widest text-sm text-white/80 font-medium mb-2 pt-55">Heritage City | Hill Station | Wild Life | Backwater | Beach</p>
+            <p className="uppercase text-6xl sm:text-4xl md:text-6xl font-normal leading-tight drop-shadow"
+            style={{
+              fontFamily: '"Alfa Slab One", serif',
+              color: 'transparent',
+              WebkitTextStroke: '2px rgba(255, 255, 255, 0.8)'
+            }}>
+              Travel With Soul, Return With Stories
+            </p>
+            <p className="uppercase text-5xl font-bold leading-tight drop-shadow"
+            style={{
+              fontFamily: '"Oswald", sans-serif',
+              color: 'transparent',
+              WebkitTextStroke: '1px rgba(255, 255, 255, 0.8)'
+            }}>
+              Your Journey Begins Here
+            </p>
           </div>
         </div>
       </div>

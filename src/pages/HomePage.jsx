@@ -76,7 +76,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen text-white">
       <Navbar />
 
       {/* TopIntro - Always visible, no animation needed */}
@@ -121,12 +121,12 @@ const HomePage = () => {
       >
         <div id="about">
           {/* Company Overview Section */}
-          <section id='about' className="py-20 bg-[#1F2937] border-t border-[#5B8424]/20">
+          <section id='about' className="py-20 bg-white border-t border-[#5B8424]/20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid gap-12 text-center md:grid-cols-[minmax(0,_1fr)_auto]">
                 <div>
-                  <h2 className="text-4xl font-bold text-white mb-6">Where Every Journey Feels Like Home   </h2>
-                  <p className="text-gray-300 mb-8 text-lg text-justify">
+                  <h2 className="text-4xl font-bold text-black mb-6">Where Every Journey Feels Like Home   </h2>
+                  <p className="text-gray-700 mb-8 text-lg text-justify">
                     Greenhopper Holidays is a professionally managed tourism company based in the heart of Kerala, dedicated to creating meaningful and comfortable travel experiences. Rooted in the rich culture, natural beauty, and warm traditions of Kerala, we take pride in offering journeys that reflect genuine hospitality, thoughtful care, and meticulous attention to detail.
 
                     At Greenhopper Holidays, we understand that every traveler is unique. Our team is committed to carefully catering to the individual needs of our guests, ensuring seamless travel planning, comfortable accommodations, and well-curated itineraries. From leisure holidays to customized travel experiences, we focus on delivering services that combine reliability, comfort, and personalized attention.
@@ -136,15 +136,15 @@ const HomePage = () => {
                   <div className="grid grid-cols-3 gap-6">
                     <div>
                       <h3 className="text-2xl font-bold text-[#5B8424] mb-2">10+</h3>
-                      <p className="text-gray-400">Years of Experience</p>
+                      <p className="text-gray-600">Years of Experience</p>
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-[#5B8424] mb-2">430+</h3>
-                      <p className="text-gray-400">Happy Travelers</p>
+                      <p className="text-gray-600">Happy Travelers</p>
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-[#5B8424] mb-2">24/7</h3>
-                      <p className="text-gray-400">Support Available</p>
+                      <p className="text-gray-600">Support Available</p>
                     </div>
                   </div>
                 </div>
@@ -160,61 +160,61 @@ const HomePage = () => {
           </section>
 
           {/* Values Section */}
-          <section className="py-20 bg-[#111111]">
+          <section className="py-20 bg-[#f1f8f4]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-4xl font-bold text-center mb-12 text-white">Services Provided</h2>
+              <h2 className="text-4xl font-bold text-center mb-12 text-black">Services Provided</h2>
               <div className="grid md:grid-cols-3 gap-8">
-                <div className="text-center p-6 bg-[#1F2937] rounded-lg border border-[#5B8424]/20">
+                <div className="text-center p-6 bg-white rounded-lg border border-[#5B8424]/20">
                   <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <FaRoute className="text-3xl text-[#5B8424]" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-white">Personalized Itineraries</h3>
-                  <p className="text-gray-400">
+                  <h3 className="text-xl font-bold mb-3 text-black">Personalized Itineraries</h3>
+                  <p className="text-gray-600">
                     Custom-tailored travel plans designed to match your interests and preferences perfectly.
                   </p>
                 </div>
-                <div className="text-center p-6 bg-[#1F2937] rounded-lg border border-[#5B8424]/20">
+                <div className="text-center p-6 bg-white rounded-lg border border-[#5B8424]/20">
                   <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <FaHotel className="text-3xl text-[#5B8424]" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-white">Hotel Booking</h3>
-                  <p className="text-gray-400">
+                  <h3 className="text-xl font-bold mb-3 text-black">Hotel Booking</h3>
+                  <p className="text-gray-600">
                     Carefully selected accommodations that ensure comfort and quality throughout your stay.
                   </p>
                 </div>
-                <div className="text-center p-6 bg-[#1F2937] rounded-lg border border-[#5B8424]/20">
+                <div className="text-center p-6 bg-white rounded-lg border border-[#5B8424]/20">
                   <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <FaCar className="text-3xl text-[#5B8424]" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-white">Transportation</h3>
-                  <p className="text-gray-400">
+                  <h3 className="text-xl font-bold mb-3 text-black">Transportation</h3>
+                  <p className="text-gray-600">
                     Reliable and comfortable transfer services for all your travel needs.
                   </p>
                 </div>
-                <div className="text-center p-6 bg-[#1F2937] rounded-lg border border-[#5B8424]/20">
+                <div className="text-center p-6 bg-white rounded-lg border border-[#5B8424]/20">
                   <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <FaUserTie className="text-3xl text-[#5B8424]" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-white">Expert Guides</h3>
-                  <p className="text-gray-400">
+                  <h3 className="text-xl font-bold mb-3 text-black">Expert Guides</h3>
+                  <p className="text-gray-600">
                     Professional and knowledgeable local guides to enhance your travel experience.
                   </p>
                 </div>
-                <div className="text-center p-6 bg-[#1F2937] rounded-lg border border-[#5B8424]/20">
+                <div className="text-center p-6 bg-white rounded-lg border border-[#5B8424]/20">
                   <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <FaMapMarkedAlt className="text-3xl text-[#5B8424]" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-white">Tour Planning</h3>
-                  <p className="text-gray-400">
+                  <h3 className="text-xl font-bold mb-3 text-black">Tour Planning</h3>
+                  <p className="text-gray-600">
                     Comprehensive tour planning and coordination for seamless travel experiences.
                   </p>
                 </div>
-                <div className="text-center p-6 bg-[#1F2937] rounded-lg border border-[#5B8424]/20">
+                <div className="text-center p-6 bg-white rounded-lg border border-[#5B8424]/20">
                   <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <FaHeadset className="text-3xl text-[#5B8424]" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-white">24/7 Support</h3>
-                  <p className="text-gray-400">
+                  <h3 className="text-xl font-bold mb-3 text-black">24/7 Support</h3>
+                  <p className="text-gray-600">
                     Round-the-clock assistance and support throughout your journey.
                   </p>
                 </div>
@@ -225,7 +225,7 @@ const HomePage = () => {
       </AnimatedSection>
 
       {/* BookingForm - Fade up with longer delay */}
-      <AnimatedSection
+      {/* <AnimatedSection
         animationType="fadeUp"
         delay={0.5}
         duration={1.3}
@@ -239,7 +239,7 @@ const HomePage = () => {
             onSuccess={handleBookingSuccess}
           />
         </div>
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       {/* Footer - Fade in */}
       <AnimatedSection

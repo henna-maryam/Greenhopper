@@ -11,11 +11,11 @@ import kumarakom from '../assets/kumarakom.webp';
 
 const DestinationCard = ({ title, description, icon, image }) => {
   return (
-    <div className="bg-[#1F2937] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-[#5B8424]/20 flex flex-col h-full transform hover:-translate-y-1">
+    <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-[#5B8424]/20 flex flex-col h-full transform hover:-translate-y-1">
       {image && (
         <div className="relative h-56 overflow-hidden">
           <img src={image} alt={title} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+          <div className="absolute inset-0 bg-gradient-to-t to-transparent flex items-end">
             <h3 className="text-2xl font-bold text-white p-4">{title}</h3>
           </div>
         </div>
@@ -25,9 +25,9 @@ const DestinationCard = ({ title, description, icon, image }) => {
           <div className="w-10 h-10 bg-[#5B8424]/10 rounded-full flex items-center justify-center mr-3">
             {icon}
           </div>
-          {!image && <h3 className="text-2xl font-bold text-white">{title}</h3>}
+          {!image && <h3 className="text-2xl font-bold text-black">{title}</h3>}
         </div>
-        <p className="text-gray-400 mb-4">{description}</p>
+        <p className="text-gray-700 mb-4">{description}</p>
       </div>
     </div>
   );
@@ -106,7 +106,7 @@ const Kerala = () => {
   ];
 
   return (
-    <div id="kerala" className="bg-[#111111]">
+    <div id="kerala" className="bg-[#f1f8f4]">
       {/* Hero Section */}
       <section className="relative h-[60vh] overflow-hidden">
         <img 
@@ -114,12 +114,12 @@ const Kerala = () => {
           alt="Kerala Landscape" 
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center max-w-4xl px-4">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
               Discover <span className="text-[#5B8424]">Kerala</span>
             </h1>
-            <p className="text-xl text-gray-200 mb-8">
+            <p className="text-xl mb-8">
               God's Own Country - Where Nature and Culture Create Paradise
             </p>
             <button 
@@ -133,11 +133,11 @@ const Kerala = () => {
       </section>
 
       {/* Overview Section */}
-      <section className="py-20 bg-[#1F2937] border-t border-[#5B8424]/20">
+      <section className="py-20 bg-white border-t border-[#5B8424]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">Explore Kerala The Right Way</h2>
-            <p className="text-gray-300 max-w-3xl mx-auto text-lg">
+            <h2 className="text-4xl font-bold text-black mb-6">Explore Kerala The Right Way</h2>
+            <p className="text-gray-700 max-w-3xl mx-auto text-lg">
               Kerala, known as "God's Own Country," is a tropical paradise on India's southwestern Malabar Coast. 
               With its emerald backwaters, misty hill stations, pristine beaches, and vibrant culture, 
               Kerala offers an enchanting escape for every traveler.
@@ -145,30 +145,30 @@ const Kerala = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-[#111111] rounded-lg border border-[#5B8424]/20">
+            <div className="text-center p-6 bg-white rounded-lg border border-[#5B8424]/20">
               <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FaWater className="text-3xl text-[#5B8424]" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Serene Backwaters</h3>
-              <p className="text-gray-400">
+              <h3 className="text-xl font-bold mb-3 text-black">Serene Backwaters</h3>
+              <p className="text-gray-700">
                 Cruise through tranquil lagoons and canals on traditional houseboats, experiencing the unique backwater ecosystem.
               </p>
             </div>
-            <div className="text-center p-6 bg-[#111111] rounded-lg border border-[#5B8424]/20">
+            <div className="text-center p-6 bg-white rounded-lg border border-[#5B8424]/20">
               <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FaMountain className="text-3xl text-[#5B8424]" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Lush Hill Stations</h3>
-              <p className="text-gray-400">
+              <h3 className="text-xl font-bold mb-3 text-black">Lush Hill Stations</h3>
+              <p className="text-gray-700">
                 Explore misty mountains, tea plantations, and cool retreats offering breathtaking views and refreshing climate.
               </p>
             </div>
-            <div className="text-center p-6 bg-[#111111] rounded-lg border border-[#5B8424]/20">
+            <div className="text-center p-6 bg-white rounded-lg border border-[#5B8424]/20">
               <div className="w-16 h-16 bg-[#5B8424]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FaLeaf className="text-3xl text-[#5B8424]" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Ayurvedic Wellness</h3>
-              <p className="text-gray-400">
+              <h3 className="text-xl font-bold mb-3 text-black">Ayurvedic Wellness</h3>
+              <p className="text-gray-700">
                 Rejuvenate with traditional Ayurvedic treatments and therapies in the land where this ancient science flourishes.
               </p>
             </div>
@@ -177,9 +177,9 @@ const Kerala = () => {
       </section>
 
       {/* Destinations Section */}
-      <section id="destinations" className="py-20 bg-[#111111]">
+      <section id="destinations" className="py-20 bg-[#f1f8f4]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center mb-12 text-white">
+          <h2 className="text-4xl font-bold text-center mb-12 text-black">
             Top Destinations in Kerala
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -197,10 +197,10 @@ const Kerala = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-[#1F2937] border-t border-[#5B8424]/20">
+      <section className="py-16 bg-white border-t border-[#5B8424]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Ready to Experience Kerala?</h2>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-black mb-6">Ready to Experience Kerala?</h2>
+          <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
             Let us create your perfect Kerala itinerary. From serene backwaters to misty mountains, 
             we'll handle all the details for an unforgettable journey.
           </p>
@@ -213,7 +213,7 @@ const Kerala = () => {
             </button>
             <button 
               onClick={handleViewPackages}
-              className="border border-[#5B8424] text-white px-6 py-3 rounded-lg hover:bg-[#5B8424]/10 transition-colors shadow-md"
+              className="border border-[#5B8424] text-black px-6 py-3 rounded-lg hover:bg-[#5B8424]/10 transition-colors shadow-md"
             >
               View All Packages
             </button>
